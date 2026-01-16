@@ -1,4 +1,10 @@
 
+export interface MediaFile {
+  url: string;
+  type: 'image' | 'video';
+  name?: string;
+}
+
 export interface CardUpdate {
   text: string;
   timestamp: number;
@@ -11,8 +17,7 @@ export interface TaskCard {
   id: string;
   title: string;
   description: string;
-  mediaUrl?: string;
-  mediaType?: 'image' | 'video';
+  mediaFiles: MediaFile[]; // Alterado de mediaUrl/mediaType para array
   assignedEmails: string[];
   createdAt: number;
   startDate?: string;
