@@ -123,7 +123,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
       <div className="w-full max-w-xl bg-[#1a1614] rounded-2xl shadow-2xl p-8 md:p-16 flex flex-col items-center">
         <div className="w-full">
           <h1 className="text-3xl md:text-4xl font-black text-white mb-10 tracking-tight uppercase text-center leading-tight">
-            {getTitle()}<span className="text-indigo-500">.</span>
+            {getTitle()}
           </h1>
 
           <form onSubmit={handleSubmit} className="space-y-6">
